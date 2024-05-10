@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/05/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Some tricks</title>
+    <url>/2024/05/09/Some-tricks/</url>
+    <content><![CDATA[<h2 id="Linux中输入命令按tab提示后会自动转义解决方案"><a href="#Linux中输入命令按tab提示后会自动转义解决方案" class="headerlink" title="Linux中输入命令按tab提示后会自动转义解决方案"></a>Linux 中输入命令按 tab 提示后会自动转义解决方案</h2><p>linux 在命令行输入命令时，如果有 <code>$</code> 字符，按 <code>tab</code> 键时会自动在前面加入转义字符，达不到自己需要的效果。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vim <span class="variable">$FOAM_RUN</span>/xxx</span><br></pre></td></tr></tbody></table></figure>
+<p>按下 <code>tab</code> 之后变为：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">vim \<span class="variable">$FOAM_RUN</span>/xxx</span><br></pre></td></tr></tbody></table></figure>
+<p>可以看到自动对 <code>$</code> 进行了转义，若想要设置禁止自动转义，可以使用如下设置开启目录扩展，<code>-s</code> 是打开的意思。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">shopt</span> -s direxpand</span><br></pre></td></tr></tbody></table></figure>
+<p>再使用上述命令会将 $FOAM_RUN 转为实际路径，再使用 <code>tab</code> 进行提示很方便了<br>使用 <code>shopt</code> 命令还可以查看已经开启和关闭的功能，若想要关闭目录扩展：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">shopt</span> -u direxpand</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="DOS不支持UNC路径作为当前目录的解决办法"><a href="#DOS不支持UNC路径作为当前目录的解决办法" class="headerlink" title="DOS不支持UNC路径作为当前目录的解决办法"></a>DOS 不支持 UNC 路径作为当前目录的解决办法</h2><p>因为 UNC 路径 (网络路径) 不受 MSDOS 支持，所以在 WSL 虚拟机中执行实体机命令会报错。</p>
+<p>解决办法是在注册表中添加一个值用以禁止 UNC 检查：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Command Processor</span><br></pre></td></tr></tbody></table></figure>
+<p>添加值 <code>DisableUNCCheck</code>，类型为 <code>REG_DWORD</code> 并设为 <code>1</code>(十六进制)</p>
+<p>若使用批处理文件：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">reg add "HKEY_CURRENT_USER\Software\Microsoft\Command Processor" /v "DisableUNCCheck" /t "REG_DWORD" /d "1" /f</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Math-content"><a href="#Math-content" class="headerlink" title="Math content"></a>Math content</h2><p>勾股定理 $a^2+b^2=c^2$<br>$$\LaTeX$$</p>
+]]></content>
+      <categories>
+        <category>knowledges</category>
+      </categories>
+      <tags>
+        <tag>tricks</tag>
+      </tags>
+  </entry>
+</search>
