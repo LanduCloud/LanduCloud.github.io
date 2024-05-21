@@ -50,6 +50,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -199,6 +200,13 @@
 
       <time title="创建时间：2024-05-09 11:30:43" itemprop="dateCreated datePublished" datetime="2024-05-09T11:30:43+08:00">2024-05-09</time>
     </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-05-10 22:00:29" itemprop="dateModified" datetime="2024-05-10T22:00:29+08:00">2024-05-10</time>
+    </span>
 
   
 </div>
@@ -211,19 +219,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/05/09/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -285,7 +288,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-05-10 15:50:26" itemprop="dateModified" datetime="2024-05-10T15:50:26+08:00">2024-05-10</time>
+      <time title="修改时间：2024-05-10 21:59:53" itemprop="dateModified" datetime="2024-05-10T21:59:53+08:00">2024-05-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -311,20 +314,14 @@
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="variable">$FOAM_RUN</span>/xxx</span><br></pre></td></tr></tbody></table></figure>
 <p>按下 <code>tab</code> 之后变为：</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim \<span class="variable">$FOAM_RUN</span>/xxx</span><br></pre></td></tr></tbody></table></figure>
-<p>可以看到自动对 <code>$</code> 进行了转义，若想要设置禁止自动转义，可以使用如下设置开启目录扩展，<code>-s</code> 是打开的意思。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shopt</span> -s direxpand</span><br></pre></td></tr></tbody></table></figure>
-<p>再使用上述命令会将 $FOAM_RUN 转为实际路径，再使用 <code>tab</code> 进行提示很方便了<br>使用 <code>shopt</code> 命令还可以查看已经开启和关闭的功能，若想要关闭目录扩展：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shopt</span> -u direxpand</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="DOS不支持UNC路径作为当前目录的解决办法"><a href="#DOS不支持UNC路径作为当前目录的解决办法" class="headerlink" title="DOS不支持UNC路径作为当前目录的解决办法"></a>DOS 不支持 UNC 路径作为当前目录的解决办法</h2><p>因为 UNC 路径 (网络路径) 不受 MSDOS 支持，所以在 WSL 虚拟机中执行实体机命令会报错。</p>
-<p>解决办法是在注册表中添加一个值用以禁止 UNC 检查：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Command Processor</span><br></pre></td></tr></tbody></table></figure>
-<p>添加值 <code>DisableUNCCheck</code>，类型为 <code>REG_DWORD</code> 并设为 <code>1</code>(十六进制)</p>
-<p>若使用批处理文件：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add "HKEY_CURRENT_USER\Software\Microsoft\Command Processor" /v "DisableUNCCheck" /t "REG_DWORD" /d "1" /f</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="Math-content"><a href="#Math-content" class="headerlink" title="Math content"></a>Math content</h2><p>勾股定理 $a^2+b^2=c^2$<br>$$\LaTeX$$</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/05/09/Some-tricks/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
