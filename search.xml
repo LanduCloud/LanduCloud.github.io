@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/05/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>逻辑学观止 (一)</title>
-    <url>/2024/05/25/%E9%80%BB%E8%BE%91%E5%AD%A6%E8%A7%82%E6%AD%A20/</url>
-    <content><![CDATA[<p>我对哲学产生兴趣已经不知是多久之前的事情了，只记得当时只是很好奇这世上所有的大问题。这世上有很多事都可以追溯到最终的问题：我是谁？我从哪里来？要到哪里去？无数哲学家在本体论、认识论以及伦理学或逻辑方面的研究，都是为了解决这些大问题。这些问题看似简单，但这几千年的研究最终并未得出什么终极答案，而这或许也可以算是一个答案。</p>
-<span id="more"></span>
-
-<h2 id="逻辑学与常识"><a href="#逻辑学与常识" class="headerlink" title="逻辑学与常识"></a>逻辑学与常识</h2><p>关于哲学的内容押后再谈，现在我想要写的内容是关于哲学的一个分支 —— 逻辑学。若说逻辑学是一门学科，那么这门学科的难度着实难说，一方面它大多数时候似乎都在重复着那些显而易见的道理，另一方面根据这些简单的道理导出的结论却让大多数人摸不着头脑。</p>
-<p><strong>常识</strong>是对日常生活中显而易见的事物的敏锐洞悉，它以可靠的辨别力为标志，以语言作为首要的揭示事物的方式，将语言的作用定位于表达而非炫耀。</p>
-<p>例如，可能有人并非知晓逻辑学的四个基本定理：同一律、无矛盾律、排中律和充足理由律，但事实上这些基本定理中蕴含的道理任谁都可以理解：</p>
-<ul>
-<li><ins>这条狗</ins>就是<ins>这条狗</ins> (同一律)</li>
-<li> 这条狗<ins>是</ins>小明的同时不能又<ins>不是</ins>小明的 (无矛盾律)</li>
-<li> 这条狗不能既<ins>是</ins>又<ins>不是</ins>小明的 (排中律)</li>
-<li> 这条狗存在在这里是因为小明家的母狗上个月生下了它 (充足理由律)</li>
-</ul>
-<p>好像任何人都能完全理解这种道理，逻辑学又是什么东西，需要学吗？但是请看另一个看似简单的问题：</p>
-<p>A 是已婚的，C 是未婚的，B 婚否未知，且：</p>
-<p>A 正在看向 B，B 正在看向 C，则有描述此情形的命题：一定有一个已婚人士看向未婚人士，此命题是真是假？</p>
-<p><img data-src="https://raw.gitmirror.com/LanduCloud/Figures/master/issue0.png" alt="问题示意"></p>
-<p>可能大多数人下意识的反应就是这个命题为假，因为前提并没有给出 B 是否已婚，但事实上此命题为真。因为无论 B 是否已婚，这三个人中始终有一个已婚人士看向未婚人士。</p>
-<p><img data-src="https://raw.gitmirror.com/LanduCloud/Figures/master/issue01.png" alt="问题解答"></p>
-<p>逻辑，<strong>生于常识</strong>，但又<strong>高于常识</strong>。逻辑思维的出现以及对非逻辑思维的避免，都根植于常识的一面。相比于逻辑，常识 更加接近本源。</p>
-<h2 id="逻辑学与哲学"><a href="#逻辑学与哲学" class="headerlink" title="逻辑学与哲学"></a>逻辑学与哲学</h2><p>说起逻辑学就不得不说到哲学，而说到哲学又不得不说到形而上学。作为哲学史上最为悠久、最为基础也争议最多的哲学，形而上学在 20 世纪逐渐式微，逻辑实证主义者将形而上学视为 “哲学的胡说”，并坚持形而上学论断是 “认识论上的无意义”。这种说法的是非暂且不必评判，但是形而上学确实受到越来越多的批判。但是在千年以来的发展中，形而上学也留下了众多珍贵的成果，在我看来，逻辑学，特别是形式逻辑显然属于这些成果之一。</p>
-<p>哲学是关于思辨的学科，而逻辑则是保证思辨的正确性的工具。</p>
-]]></content>
-      <categories>
-        <category>knowledges</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
-        <tag>逻辑学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Some tricks</title>
     <url>/2024/05/09/Some-tricks/</url>
     <content><![CDATA[<h2 id="Linux中输入命令按tab提示后会自动转义解决方案"><a href="#Linux中输入命令按tab提示后会自动转义解决方案" class="headerlink" title="Linux中输入命令按tab提示后会自动转义解决方案"></a>Linux 中输入命令按 tab 提示后会自动转义解决方案</h2><p>linux 在命令行输入命令时，如果有 <code>$</code> 字符，按 <code>tab</code> 键时会自动在前面加入转义字符，达不到自己需要的效果。</p>
@@ -80,6 +27,39 @@
       </categories>
       <tags>
         <tag>tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>逻辑学观止 (一)</title>
+    <url>/2024/05/25/%E9%80%BB%E8%BE%91%E5%AD%A6%E8%A7%82%E6%AD%A20/</url>
+    <content><![CDATA[<p>我对哲学产生兴趣已经不知是多久之前的事情了，只记得当时只是很好奇这世上所有的大问题。这世上有很多事都可以追溯到最终的问题：我是谁？我从哪里来？要到哪里去？无数哲学家在本体论、认识论以及伦理学或逻辑方面的研究，都是为了解决这些大问题。这些问题看似简单，但这几千年的研究最终并未得出什么终极答案，而这或许也可以算是一个答案。</p>
+<span id="more"></span>
+
+<h2 id="逻辑学与常识"><a href="#逻辑学与常识" class="headerlink" title="逻辑学与常识"></a>逻辑学与常识</h2><p>关于哲学的内容押后再谈，现在我想要写的内容是关于哲学的一个分支 —— 逻辑学。若说逻辑学是一门学科，那么这门学科的难度着实难说，一方面它大多数时候似乎都在重复着那些显而易见的道理，另一方面根据这些简单的道理导出的结论却让大多数人摸不着头脑。</p>
+<p><strong>常识</strong>是对日常生活中显而易见的事物的敏锐洞悉，它以可靠的辨别力为标志，以语言作为首要的揭示事物的方式，将语言的作用定位于表达而非炫耀。</p>
+<p>例如，可能有人并非知晓逻辑学的四个基本定理：同一律、无矛盾律、排中律和充足理由律，但事实上这些基本定理中蕴含的道理任谁都可以理解：</p>
+<ul>
+<li><ins>这条狗</ins>就是<ins>这条狗</ins> (同一律)</li>
+<li> 这条狗<ins>是</ins>小明的同时不能又<ins>不是</ins>小明的 (无矛盾律)</li>
+<li> 这条狗不能既<ins>是</ins>又<ins>不是</ins>小明的 (排中律)</li>
+<li> 这条狗存在在这里是因为小明家的母狗上个月生下了它 (充足理由律)</li>
+</ul>
+<p>好像任何人都能完全理解这种道理，逻辑学又是什么东西，需要学吗？但是请看另一个看似简单的问题：</p>
+<p>A 是已婚的，C 是未婚的，B 婚否未知，且：</p>
+<p>A 正在看向 B，B 正在看向 C，则有描述此情形的命题：一定有一个已婚人士看向未婚人士，此命题是真是假？</p>
+<p><img data-src="https://raw.gitmirror.com/LanduCloud/Figures/master/issue0.png" alt="问题示意"></p>
+<p>可能大多数人下意识的反应就是这个命题为假，因为前提并没有给出 B 是否已婚，但事实上此命题为真。因为无论 B 是否已婚，这三个人中始终有一个已婚人士看向未婚人士。</p>
+<p><img data-src="https://raw.gitmirror.com/LanduCloud/Figures/master/issue01.png" alt="问题解答"></p>
+<p>逻辑，<strong>生于常识</strong>，但又<strong>高于常识</strong>。逻辑思维的出现以及对非逻辑思维的避免，都根植于常识的一面。相比于逻辑，常识 更加接近本源。</p>
+<h2 id="逻辑学与哲学"><a href="#逻辑学与哲学" class="headerlink" title="逻辑学与哲学"></a>逻辑学与哲学</h2><p>说起逻辑学就不得不说到哲学，而说到哲学又不得不说到形而上学。作为哲学史上最为悠久、最为基础也争议最多的哲学，形而上学在 20 世纪逐渐式微，逻辑实证主义者将形而上学视为 “哲学的胡说”，并坚持形而上学论断是 “认识论上的无意义”。这种说法的是非暂且不必评判，但是形而上学确实受到越来越多的批判。但是在千年以来的发展中，形而上学也留下了众多珍贵的成果，在我看来，逻辑学，特别是形式逻辑显然属于这些成果之一。</p>
+<p>哲学是关于思辨的学科，而逻辑学则是研究思维的形式结构及其规律的科学，是保证思辨的正确性的工具。</p>
+]]></content>
+      <categories>
+        <category>knowledges</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+        <tag>逻辑学</tag>
       </tags>
   </entry>
   <entry>
